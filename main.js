@@ -31,11 +31,54 @@ const companies = [
 
 //displays companies with age>20
 
-const filteredCompanies = companies.filter(company => {
-  const companyAge = company.endDate - company.startDate
-  if (companyAge > 20) {
-    return true
-  }
-})
+// const over20Companies = companies.filter(company => {
+//   const companyAge = company.endDate - company.startDate
+//   if (companyAge > 20) {
+//     return true
+//   }
+// })
 
-console.log(filteredCompanies)
+// console.log(over20Companies)
+
+//displays names of companies from Technology sector
+
+// const technologySector = companies.reduce((prev, current) => {
+//   if (current.category === 'Technology') {
+//     prev.push(current.name)
+//   }
+//   return prev
+// }, [])
+
+// console.log(technologySector)
+
+//displays companies sorted by start-date
+
+// const sortedCompanies = companies.sort((a, b) => (a.startDate > b.startDate ? 1 : -1))
+
+// console.log(sortedCompanies)
+
+//displays average age of all companies
+
+// const averageAge = companies.reduce((prev, current) => {
+//   const age = current.endDate - current.startDate
+
+//   return (prev + age)
+// }, 0) / companies.length
+
+// console.log(averageAge)
+
+//displays companies of Entertainment sector which were started after 1990
+
+// const entertainmentCompanies = companies
+//   .filter(company => company.category === 'Entertainment' && company.startDate > 1990)
+
+// console.log(entertainmentCompanies)
+
+//displays age sum of all companies
+
+// const totalAge = companies.reduce((total, company) => {
+//   const age = company.endDate - company.startDate
+//   return total + age
+// }, 0)
+
+// console.log(totalAge)
